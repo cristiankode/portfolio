@@ -1,0 +1,120 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2rem;
+    background: var(--color-bg-secondary);
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Info */
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact__info h2 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 72px;
+  letter-spacing: -2.05px;
+  text-align: center;
+  margin: 10px 0
+}
+
+.contact__info p {
+    font-size: 1rem;
+    font-weight: medium;
+    text-align: center;
+    color: var(--secondary);
+    line-height: 26px;
+    letter-spacing: 0;
+    max-width: 77%;
+}
+
+.rings-img__footer {
+    max-width: 137%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-67%, -97%);
+}
+
+.divider-footer {
+    width: 100%;
+    max-width: 75rem;
+    margin: 5rem 0 0 0;
+}
+
+/* Footer */
+.contact__footer {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.33px;
+}
+
+@media (min-width: 768px) {
+    .contact__container {
+        width: 75%;  
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+    .contact__info p {
+        max-width: 77%;
+    }
+    /* Footer */
+    .contact__footer {
+        padding-top: unset;
+        justify-content: space-between;
+        flex-direction: row;
+        max-width: unset;
+        margin: unset;
+    }
+    .rings-img__footer {
+        max-width: 65%;
+        transform: translate(-81%, -42%);
+    }
+    .brand {
+        font-size: 32px;
+        letter-spacing: -0.44px;
+    }
+}
+@media (min-width: 1024px) {
+    .contact__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: var(--space-lg);
+        grid-row-gap: 0px;
+        width: unset;
+    }
+    .contact__info {
+        align-items: flex-start;
+    }
+    .contact__info p {
+        text-align: left;
+    }
+    .rings-img__footer {
+        max-width: 29%;
+        transform: translate(-27%, -66%);
+    }
+    .divider-footer {
+        width: 95%;
+        margin: 5rem auto 0 auto;
+    }
+    .contact__footer {
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,75 @@
+.skills {
+    padding: 35rem 2.5rem 2.5rem 2.5rem;
+}
+
+.skills__grid {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: center;
+}
+
+.skills__item {
+    padding: 10px 0;
+}
+.skill__title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -1px;
+    margin: unset;
+}
+
+.skill__experience {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0;
+    font-weight: medium;
+    margin: 10px 0;
+}
+
+.skills__rings{
+    position: relative;
+    width: 100%;
+}
+.skills__rings_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(35%, -51%);
+    max-width: 143%;
+}
+
+@media (min-width: 768px) {
+    .skills__grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5rem 0 2.5rem 0;
+    }
+    .skill__title {
+        font-size: 48px;
+    }
+    .skill__experience {
+        font-size: 18px;
+    }
+    .skills__rings_img {
+        transform: translate(120%, -121%);
+    }
+    .skills__hr_botom {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .skills {
+        padding: 48rem 2.5rem 1rem 2.5rem;
+    }
+
+    .skills__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .skills__rings_img {
+        transform: translate(281%, -109%);
+    }
+}

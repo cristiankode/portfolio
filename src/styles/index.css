@@ -1,0 +1,106 @@
+@import "normalize.css";
+@import "./variables.css";
+@import "./base.css";
+@import "./utilities.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./skills.css";
+@import "./projects.css";
+@import "./Contact.css";
+@import "./form.css";
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 700; /* rango variable */
+  font-style: normal;
+}
+
+.hero {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* 📱 layout vertical */
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+/* texto */
+.hero-text {
+  max-width: 100%;
+}
+
+/* accent underline */
+.accent {
+  border-bottom: 4px solid #4EE1A0;
+}
+
+/* botón tipo figma */
+.btn-link {
+  background: none;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  line-height: 26px;
+}
+
+.btn-link::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-accent);
+}
+
+.btn-link:hover::after {
+  transform: scaleX(1.1);
+  transition: transform 0.3s ease;
+}
+
+.btn-link:hover {
+  color: var(--color-accent);
+  transition: color 0.3s ease;
+}
+
+
+.social-networks {
+  display: flex;
+  gap: 1.1875rem;
+}
+
+.social-networks img {
+  width: 19.2px;
+  cursor: pointer;
+}
+
+.social-networks img,
+.icon {
+  transition: all 0.3s ease;
+}
+
+.social-networks img:hover,
+.icon:hover {
+  transform: translateY(-3px);
+  filter: brightness(0) saturate(100%) invert(73%) sepia(63%) 
+          saturate(358%) hue-rotate(100deg) brightness(95%) contrast(90%);
+}
+
+
+@media (min-width: 768px) {
+  .social-networks {
+    gap: 2rem;
+  }
+  .social-networks img {
+    width: 24px;
+  }
+}

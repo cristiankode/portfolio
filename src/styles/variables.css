@@ -1,0 +1,18 @@
+:root {
+  --color-bg: #151515;
+  --color-bg-secondary: #242424;
+  --color-accent: #4EE1A0;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #D9D9D9;
+  --color-error: #ff6b6b;
+
+  --font-main: 'Space Grotesk', sans-serif;
+
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 40px;
+  --space-xl: 80px;
+
+  --radius: 4px;
+}
