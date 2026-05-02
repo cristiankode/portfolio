@@ -41,7 +41,7 @@ export default function Contact() {
                     className={validated ? 'contact__form was-validated' : 'contact__form'}
                 >
                     <div className="form-group">
-                        <input type="text" is='name' placeholder="NAME" required />
+                        <input type="text" id='name' placeholder="NAME" required />
                     </div>
                     <div className="form-group">
                         <div className='input-wrapper'>
