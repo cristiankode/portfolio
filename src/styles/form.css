@@ -138,7 +138,7 @@ textarea {
   width: 100%;
   background: transparent;
   border: none;
-  border-bottom: 2px solid var(--color-error);
+  border-bottom: 2px solid var(--color-accent);
   padding: 12px 40px 20px 30px;
   color: var(--text);
   font-size: 0.9rem;
