@@ -20,8 +20,6 @@ export default function Contact() {
             formRef.current.reportValidity()
             return
         }
-
-        alert('correo enviado 🚀')
     }
     return (
         <section className="contact">
