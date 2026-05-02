@@ -18,10 +18,10 @@ function App() {
           </h1>
 
           <div className='header__icons'>  
-            <img src={iconGithub} className='header__icons_img'/>
-            <img src={iconFrontendMentor} className='header__icons_img'/>
-            <img src={iconLinkedin} className='header__icons_img'/>
-            <img src={iconTwitter} className='header__icons_img'/>
+            <img src={iconGithub} alt="image icon Github" className='header__icons_img'/>
+            <img src={iconFrontendMentor} alt="image icon Frontendmentor" className='header__icons_img'/>
+            <img src={iconLinkedin} alt="image icon LinkedInd" className='header__icons_img'/>
+            <img src={iconTwitter} alt="image icon Twitter" className='header__icons_img'/>
           </div>
         </div>
       </header>

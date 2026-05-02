@@ -7,10 +7,10 @@ export default function Hero(){
             <div className="container hero-wrapper">
                 <HeroImage />
                 <div className="rings">
-                    <img src={patternRings} className="rings-img" />
+                    <img src={patternRings} alt="image ring decorative" className="rings-img" />
                 </div>
                 <div className="hero-circle">
-                    <img src={patternCircle} className="circle-img" />
+                    <img src={patternCircle} alt="image circle decorative" className="circle-img" />
                 </div>    
                 <div className="container">
                     <div className="hero-content-text">

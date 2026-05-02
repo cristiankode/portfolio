@@ -33,7 +33,7 @@ export default function Skills(){
                     </div>
                 </div>
                 <div className="skills__rings">
-                    <img src={patternRings} className="skills__rings_img" />
+                    <img src={patternRings} alt="image ring decorative" className="skills__rings_img" />
                 </div>
                 <hr className='skills__hr_botom'/>
             </div>

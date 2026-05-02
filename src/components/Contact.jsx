@@ -70,7 +70,7 @@ export default function Contact() {
                 </form>
             </div>
             <div className="rings">
-                <img src={patternRings} className="rings-img__footer" />
+                <img src={patternRings} alt="image ring decorative" className="rings-img__footer" />
             </div>
             <hr className='divider-footer'/>
             <div className="contact__footer container">
