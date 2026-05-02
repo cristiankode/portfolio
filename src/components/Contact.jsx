@@ -76,10 +76,10 @@ export default function Contact() {
                 <p className="brand">adamkeyes</p>
 
                 <div className="social-networks">
-                    <img src={iconGithub} alt="github" />
-                    <img src={iconFrontendMentor} alt="frontend-mentor"/>
-                    <img src={iconLinkedin} alt="linkedin"/>
-                    <img src={iconTwitter}  alt="twitter"/>
+                    <img src={iconGithub} alt="" />
+                    <img src={iconFrontendMentor} alt=""/>
+                    <img src={iconLinkedin} alt=""/>
+                    <img src={iconTwitter}  alt=""/>
                 </div>
             </div>
         </section>
