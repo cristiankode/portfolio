@@ -41,14 +41,15 @@ export default function Contact() {
                     className={validated ? 'contact__form was-validated' : 'contact__form'}
                 >
                     <div className="form-group">
-                        <input type="text" id='name' placeholder="NAME" required />
+                        <input type="text" id='name' name="name" placeholder="NAME" required />
                     </div>
                     <div className="form-group">
                         <div className='input-wrapper'>
                             <input 
                                 ref={emailRef} 
                                 type="email"
-                                id='email' 
+                                id='email'
+                                name='email'
                                 placeholder="EMAIL" 
                                 required
                             />
@@ -61,7 +62,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="form-group">
-                        <textarea placeholder="MESSAGE" rows="4" id='message' required />
+                        <textarea placeholder="MESSAGE" name="message" rows="4" id='message' required />
                     </div>
 
                     <button type="submit" className="btn-submit">
